@@ -46,7 +46,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Shakespeare.ico</ApplicationIcon>
+    <ApplicationIcon>shakespeare_3.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Octokit, Version=0.19.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -94,6 +94,12 @@
     <Compile Include="Feedback.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="GitHubUpdater.Designer.vb">
+      <DependentUpon>GitHubUpdater.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GitHubUpdater.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SplashScreen.Designer.vb">
       <DependentUpon>SplashScreen.vb</DependentUpon>
     </Compile>
@@ -129,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Feedback.resx">
       <DependentUpon>Feedback.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GitHubUpdater.resx">
+      <DependentUpon>GitHubUpdater.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen.resx">
       <DependentUpon>SplashScreen.vb</DependentUpon>
@@ -174,6 +183,8 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\octokit-dotnet_transparent.png" />
+    <Content Include="shakespeare_3.ico" />
     <None Include="packages.config" />
     <None Include="Shakespeare 2.png" />
     <None Include="Shakespeare 3 - Cropped.png" />
