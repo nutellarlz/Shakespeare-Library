@@ -204,4 +204,8 @@
         AxWebBrowser1.Navigate(Environment.CurrentDirectory + "\License.txt")
 
     End Sub
+
+    Private Sub RibbonButton10_Click(sender As Object, e As EventArgs) Handles RibbonButton10.Click
+        GitHubUpdater.Visible = True
+    End Sub
 End Class

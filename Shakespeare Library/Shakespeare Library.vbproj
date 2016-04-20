@@ -184,6 +184,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\octokit-dotnet_transparent.png" />
+    <None Include="Resources\GitHub-Mark-32px.png" />
     <Content Include="shakespeare_3.ico" />
     <None Include="packages.config" />
     <None Include="Shakespeare 2.png" />

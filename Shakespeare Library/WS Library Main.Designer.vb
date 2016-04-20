@@ -89,6 +89,8 @@ Partial Class Form1
         Me.RibbonTab3 = New System.Windows.Forms.RibbonTab()
         Me.RibbonPanel1 = New System.Windows.Forms.RibbonPanel()
         Me.RibbonButton1 = New System.Windows.Forms.RibbonButton()
+        Me.RibbonPanel6 = New System.Windows.Forms.RibbonPanel()
+        Me.RibbonButton10 = New System.Windows.Forms.RibbonButton()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
@@ -138,6 +140,7 @@ Partial Class Form1
         '
         Me.RibbonTab2.Panels.Add(Me.RibbonPanel2)
         Me.RibbonTab2.Panels.Add(Me.RibbonPanel3)
+        Me.RibbonTab2.Panels.Add(Me.RibbonPanel6)
         Me.RibbonTab2.Text = "Home"
         '
         'RibbonPanel2
@@ -818,6 +821,17 @@ Partial Class Form1
         Me.RibbonButton1.SmallImage = CType(resources.GetObject("RibbonButton1.SmallImage"), System.Drawing.Image)
         Me.RibbonButton1.Text = "RibbonButton1"
         '
+        'RibbonPanel6
+        '
+        Me.RibbonPanel6.Items.Add(Me.RibbonButton10)
+        Me.RibbonPanel6.Text = "Options"
+        '
+        'RibbonButton10
+        '
+        Me.RibbonButton10.Image = Global.Shakespeare_Library.My.Resources.Resources.GitHub_Mark_32px
+        Me.RibbonButton10.SmallImage = CType(resources.GetObject("RibbonButton10.SmallImage"), System.Drawing.Image)
+        Me.RibbonButton10.Text = "GitHub Updater"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -911,5 +925,6 @@ Partial Class Form1
     Friend WithEvents RibbonButton7 As System.Windows.Forms.RibbonButton
     Friend WithEvents RibbonButton8 As System.Windows.Forms.RibbonButton
     Friend WithEvents RibbonButton9 As System.Windows.Forms.RibbonButton
-
+    Friend WithEvents RibbonPanel6 As RibbonPanel
+    Friend WithEvents RibbonButton10 As RibbonButton
 End Class
