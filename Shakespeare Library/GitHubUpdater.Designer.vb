@@ -136,6 +136,7 @@ Partial Class GitHubUpdater
         'RadioButton2
         '
         Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Enabled = False
         Me.RadioButton2.Location = New System.Drawing.Point(75, 55)
         Me.RadioButton2.Name = "RadioButton2"
         Me.RadioButton2.Size = New System.Drawing.Size(47, 17)
@@ -167,6 +168,7 @@ Partial Class GitHubUpdater
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Enabled = False
         Me.CheckBox1.Location = New System.Drawing.Point(14, 19)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(154, 17)

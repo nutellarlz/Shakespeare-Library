@@ -32,6 +32,8 @@ Partial Class Form1
         Me.RibbonButton4 = New System.Windows.Forms.RibbonButton()
         Me.RibbonPanel3 = New System.Windows.Forms.RibbonPanel()
         Me.RibbonButton6 = New System.Windows.Forms.RibbonButton()
+        Me.RibbonPanel6 = New System.Windows.Forms.RibbonPanel()
+        Me.RibbonButton10 = New System.Windows.Forms.RibbonButton()
         Me.RibbonTab4 = New System.Windows.Forms.RibbonTab()
         Me.RibbonPanel4 = New System.Windows.Forms.RibbonPanel()
         Me.RibbonButton5 = New System.Windows.Forms.RibbonButton()
@@ -89,8 +91,6 @@ Partial Class Form1
         Me.RibbonTab3 = New System.Windows.Forms.RibbonTab()
         Me.RibbonPanel1 = New System.Windows.Forms.RibbonPanel()
         Me.RibbonButton1 = New System.Windows.Forms.RibbonButton()
-        Me.RibbonPanel6 = New System.Windows.Forms.RibbonPanel()
-        Me.RibbonButton10 = New System.Windows.Forms.RibbonButton()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
@@ -178,6 +178,17 @@ Partial Class Form1
         Me.RibbonButton6.Image = CType(resources.GetObject("RibbonButton6.Image"), System.Drawing.Image)
         Me.RibbonButton6.SmallImage = CType(resources.GetObject("RibbonButton6.SmallImage"), System.Drawing.Image)
         Me.RibbonButton6.Text = "Reload"
+        '
+        'RibbonPanel6
+        '
+        Me.RibbonPanel6.Items.Add(Me.RibbonButton10)
+        Me.RibbonPanel6.Text = "Options"
+        '
+        'RibbonButton10
+        '
+        Me.RibbonButton10.Image = Global.Shakespeare_Library.My.Resources.Resources.GitHub_Mark_32px
+        Me.RibbonButton10.SmallImage = CType(resources.GetObject("RibbonButton10.SmallImage"), System.Drawing.Image)
+        Me.RibbonButton10.Text = "GitHub Updater"
         '
         'RibbonTab4
         '
@@ -820,17 +831,6 @@ Partial Class Form1
         Me.RibbonButton1.Image = CType(resources.GetObject("RibbonButton1.Image"), System.Drawing.Image)
         Me.RibbonButton1.SmallImage = CType(resources.GetObject("RibbonButton1.SmallImage"), System.Drawing.Image)
         Me.RibbonButton1.Text = "RibbonButton1"
-        '
-        'RibbonPanel6
-        '
-        Me.RibbonPanel6.Items.Add(Me.RibbonButton10)
-        Me.RibbonPanel6.Text = "Options"
-        '
-        'RibbonButton10
-        '
-        Me.RibbonButton10.Image = Global.Shakespeare_Library.My.Resources.Resources.GitHub_Mark_32px
-        Me.RibbonButton10.SmallImage = CType(resources.GetObject("RibbonButton10.SmallImage"), System.Drawing.Image)
-        Me.RibbonButton10.Text = "GitHub Updater"
         '
         'Form1
         '
